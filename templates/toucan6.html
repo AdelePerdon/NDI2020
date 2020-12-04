@@ -1,0 +1,51 @@
+<html lang="en">
+
+    <head>
+        <title> Surfin'clean </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+  <body>
+          <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img src="../images/logo_wave.png" >
+          <h3> Tendances </h3>
+          <a href="toucan1.html">Taux de composés typiques</a>
+          <h3> Chloration de l'eau </h3>
+          <a href="toucan2.html">Carte Nationale</a>
+          <a href="toucan3.html">Chloration citadine</a>
+          <h3> Bactéries </h3>
+          <a href="toucan4.html">Qualité de l'eau</a>
+          <a href="toucan5.html">E. Coli en France</a>
+           <h3> Résumé visualisation </h3>
+          <a href="toucan6.html">Résumé visualisation</a>         
+          <a style="color:#8c8c8c; font-size:25px;"href="index.html">Menu principal</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; Menu visualisation </span>
+
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                      <iframe style="border: 0; overflow: hidden;" frameBorder="0" height="200%" width="100%" src="https://nuit-info-2020.toucantoco.com/embed.html?id=ff91cf79-b902-486c-8c45-6e278c9b8cb9&height=auto&width=420px&stage=staging"></iframe>
+                </div>
+                <div class="col-sm">
+                    <iframe style="border: 0; overflow: hidden;" frameBorder="0" height="200%" width="100%" src="https://nuit-info-2020.toucantoco.com/embed.html?id=c233fcd7-4aab-4d1b-912e-cbec2b7ccce6&height=190px&width=320px&stage=staging"></iframe>
+                </div>
+              </div>
+            </div>
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Surfin'clean </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/javascript">
+            function controle(form1) {
+                var test = document.form1.input.value;
+                document.location.href="file:///D:/Docs/Projets/NUIT2020/jeu_vie2/jeuvie.html"
+                }
+        </script>
+    </head>
+    <body>
+        <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img src="../images/logo_wave.png" >
+          <a href="index.html">Données météo</a>
+          <a href="seance.html">Mes séances</a>
+          <a href="toucan1.html">Visualisation</a>
+          <a href="about.html">About</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; MENU </span>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+
+        <div class="main">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <a href="register.html">Register</a>
+                    <a href="login.html">Log In</a>
+                </div>
+                <div class="row justify-content-left">
+                </div>
+          </div>
+            <form name="form1"  method="post">
+              <div class="row">
+              <div class="col-sm">
+                <div class="form-group">
+                    <input type=text class="form-control" name="username" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="form-group">
+                    <input type =password class="form-control" name="password" placeholder="Password">
+                </div>
+              </div>
+                <div class="col-sm">
+                </div>
+                  </div>
+                <button class="btn btn-info btn-lg" onClick="controle(form1)">Log in</button>
+            </form>
+          </div>
+    </body>
+</html>
+

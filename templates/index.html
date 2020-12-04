@@ -1,0 +1,47 @@
+<html lang="en">
+
+    <head>
+        <title> Surfin'clean </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+  <body>
+          <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img src="../images/logo_wave.png" >
+          <a href="index.html">Données météo</a>
+          <a href="seance.html">Mes séances</a>
+          <a href="toucan1.html">Visualisation</a>
+          <a href="about.html">About</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; MENU </span>
+
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+
+          <div class="main">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <a href="register.html">Register</a>
+                    <a href="login.html">Log In</a>
+                </div>
+              </div>
+            <h1 style="color:white"> Données Météorologiques </h1>
+          </div>
+
+              <iframe style="border: 0; overflow: hidden;" frameBorder="0" height="100%" width="100%" src="https://nuit-info-2020.toucantoco.com/embed.html?id=6997cbc1-504d-4d03-9ad8-96b3ca90924e&title=true&stage=staging"></iframe>
+
+              
+  </body>
+</html>
